@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+header {
+    height: 100vh;
+    background-image: url("https://cdn.pixabay.com/photo/2019/02/23/07/21/carpenter-4015109_1280.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#948772;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+}
+nav ul {
+    display: flex;
+}
+li {
+   list-style: none; 
+}
+nav a {
+    padding-right: 30px;
+    color: white;
+    font-size: .8em;
+    text-decoration: none;
+}
+h4 {
+    color: white;
+    font-weight: 400;
+    padding: 5px;
+    margin-left: 30px;
+    border: 1px solid ;
+    
+}
+h4 span {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #442f10;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 700px;
+    background-color: rgba(255, 255, 255, 0.244);
+    align-self: center;
+    margin-top: 60px;
+    backdrop-filter: blur(5px);
+}
+h1 {
+    margin-bottom: 60px;
+    font-size: 3em;
+    font-weight: 900;
+}
+button {
+    margin-top: 40px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3358ac;
+    color: white;
+    cursor: pointer;
+}
+.promesses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+.promesses img {
+    width: 20%;
+}
+.promesses i {
+    color: #3358ac;
+    padding-right: 10px;
+    font-size: 1.5em;
+}
+.prom-container div {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 600px;
+    padding-top: 20px;
+}
+.realisations h2 {
+    padding-left: 60px;
+}
+.realisations-container {
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 60px;
+}
+
+.real-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 650px;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.real-content {
+    padding-top: 20px;
+}
+.real-content p {
+    padding-top: 10px;
+}
+.temoignages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tem-content {
+    width: 800px;
+    padding: 20px 30px;
+    margin: 20px 0;
+    background-color: #b8ad9d;
+    text-align: center;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    background-color: #442f10;
+    color: white;
+    margin-top: 40px;
+}
+footer ul {
+    display: flex;
+}
+footer a {
+    padding-right: 10px;
+    color: white;
+}
+
+
