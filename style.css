@@ -24,6 +24,8 @@ nav {
     z-index: 1;
     width: 100%;
     top: 0;
+    box-shadow: rgba(0, 0, 0, 0.269) 0px 8px 24px;
+
 }
 nav ul {
     display: flex;
@@ -57,24 +59,35 @@ h4 span {
     justify-content: center;
     height: 400px;
     width: 700px;
-    background-color: rgba(255, 255, 255, 0.244);
+    background-color: rgba(255, 255, 255, 0.338);
     align-self: center;
     margin-top: 60px;
     backdrop-filter: blur(5px);
 }
+.hero-content p {
+    font-size: 1.3em;
+    color:white;
+}
 h1 {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     font-size: 3em;
     font-weight: 900;
+    background: -webkit-linear-gradient(90deg, #000000 0%, #442f10 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 button {
+    border: none;
     margin-top: 40px;
     padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #3358ac;
-    color: white;
+    box-shadow: rgba(0, 0, 0, 0.532) 0px 8px 24px;
+    color:#442f10;
     cursor: pointer;
+}
+button:hover {
+    background-color: #948772;
+    color: white;
+    transition: ease-in-out .5s;
 }
 .promesses {
     display: flex;
@@ -83,10 +96,12 @@ button {
     padding: 60px;
 }
 .promesses img {
-    width: 20%;
+    width: 45%;
+    align-self: center;
+
 }
 .promesses i {
-    color: #3358ac;
+    color: #948772;
     padding-right: 10px;
     font-size: 1.5em;
 }
@@ -95,29 +110,31 @@ button {
     align-items: center;
     height: 50px;
     width: 600px;
-    padding-top: 20px;
+    padding: 40px;
+    margin: 40px 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
 }
-.realisations h2 {
+.realisations > h2 {
     padding-left: 60px;
 }
 .realisations-container {
     display: flex;  
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:space-evenly;
     padding: 60px;
 }
-
 .real-container {
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 650px;
+    width: 400px;
+    height: 600px;
     padding: 20px;
     margin-top: 40px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .real-content {
-    padding-top: 20px;
+    padding-top: 40px;
 }
 .real-content p {
     padding-top: 10px;
@@ -126,18 +143,30 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
 }
 .tem-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 800px;
+    height: 200px;
     padding: 20px 30px;
-    margin: 20px 0;
-    background-color: #b8ad9d;
+    margin: 40px 0;
+    border: #948772 2px solid;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     text-align: center;
+}
+.tem-content p {
+    padding: 10px 20px;
+}
+h3 {
+    padding-top: 10px;
 }
 footer {
     display: flex;
     justify-content: space-between;
-    padding: 30px 60px;
+    padding: 20px 60px;
     background-color: #442f10;
     color: white;
     margin-top: 40px;

@@ -39,7 +39,7 @@ fetch('https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
         divProm.appendChild(h2Prom)
         
         let imgProm = document.createElement("img");
-        imgProm.src = "https://cdn.pixabay.com/photo/2016/06/03/15/35/customer-service-1433639_1280.png"
+        imgProm.src = "whyUS.svg";
         promesses.appendChild(imgProm);
         
         data.promessesClients.forEach(element => {
@@ -62,9 +62,12 @@ fetch('https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
         real.appendChild(divRealContainer);
 
         data.realisations.forEach(element => {
-            //creer une div
             let divReal = document.createElement("div");
             divReal.className = "real-container";
+            divReal.setAttribute("data-aos", "zoom-in");
+            divReal.setAttribute("data-aos-easing", "ease-in-out");
+            divReal.setAttribute("data-aos-duration", "1300");
+
             divRealContainer.appendChild(divReal);
 
             let img = document.createElement("img");
@@ -97,6 +100,11 @@ fetch('https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
             let divTem = document.createElement("div");
             divTem.className = "tem-content";
             divTemContainer.appendChild(divTem);
+            divTem.setAttribute("data-aos", "fade-up");
+            divTem.setAttribute("data-aos-easing", "ease-in-out");
+            divTem.setAttribute("data-aos-duration", "1000");
+            divTem.setAttribute("data-aos-delai", "100");
+
 
             let h3 = document.createElement("h3");
             h3.textContent = element.typePrestation;
@@ -107,7 +115,7 @@ fetch('https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
             divTem.appendChild(pNote);
 
             let pCom = document.createElement("p");
-            pCom.textContent = element.commentaire;
+            pCom.textContent = '" ' + element.commentaire + ' "';
             divTem.appendChild(pCom);
 
             let pNom = document.createElement("p");
