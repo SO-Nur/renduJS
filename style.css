@@ -73,7 +73,7 @@ h1 {
     font-size: 3em;
     font-weight: 900;
     background: -webkit-linear-gradient(90deg, #000000 0%, #442f10 60%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 button {
@@ -87,7 +87,7 @@ button {
 button:hover {
     background-color: #948772;
     color: white;
-    transition: ease-in-out .5s;
+    transition: ease-in-out .7s;
 }
 .promesses {
     display: flex;
@@ -112,6 +112,7 @@ button:hover {
     width: 600px;
     padding: 40px;
     margin: 40px 0;
+    border: #94877242 2px solid;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
 }
@@ -129,12 +130,11 @@ button:hover {
     flex-direction: column;
     width: 400px;
     height: 600px;
-    padding: 20px;
     margin-top: 40px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .real-content {
-    padding-top: 40px;
+    padding: 30px;
 }
 .real-content p {
     padding-top: 10px;
@@ -153,7 +153,7 @@ button:hover {
     height: 200px;
     padding: 20px 30px;
     margin: 40px 0;
-    border: #948772 2px solid;
+    border: #94877242 2px solid;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     text-align: center;
 }
